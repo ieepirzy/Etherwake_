@@ -1,0 +1,9 @@
+services:
+  etherwake:
+    build: .
+    network_mode: host
+    restart: unless-stopped
+    environment:
+      - TARGET_MAC=${TARGET_MAC}
+      - LISTEN_HOST=10.8.0.8
+      - LISTEN_PORT=6969
