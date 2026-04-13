@@ -9,8 +9,8 @@ import struct
 from http.server import HTTPServer, BaseHTTPRequestHandler
 
 TARGET_MAC = os.getenv("TARGET_MAC")  # format: AA:BB:CC:DD:EE:FF
-LISTEN_HOST = os.getenv("LISTEN_HOST", "10.8.0.8")
-LISTEN_PORT = int(os.getenv("LISTEN_PORT", "6969"))
+LISTEN_HOST = os.getenv("LISTEN_HOST")
+LISTEN_PORT = int(os.getenv("LISTEN_PORT"))
 
 if not TARGET_MAC:
     raise RuntimeError("TARGET_MAC must be set (e.g. AA:BB:CC:DD:EE:FF)")

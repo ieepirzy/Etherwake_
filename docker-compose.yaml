@@ -5,5 +5,5 @@ services:
     restart: unless-stopped
     environment:
       - TARGET_MAC=${TARGET_MAC}
-      - LISTEN_HOST=10.8.0.8
-      - LISTEN_PORT=6969
+      - LISTEN_HOST=${LISTEN_HOST}
+      - LISTEN_PORT=${LISTEN_PORT}
